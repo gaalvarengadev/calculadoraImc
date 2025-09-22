@@ -1,16 +1,12 @@
 function calcularImc () {
-//entrada de dados
 
     let valorPeso = parseFloat (document.getElementById('peso').value);
     let valorAltura = parseFloat(document.getElementById('altura').value);
 
-//processamento
 
     const valorImc = valorPeso / (valorAltura * valorAltura)
     document.getElementById('valorImc').innerText =  + valorImc.toFixed(2);
-//
 
-//classicacao do peso
 
     let classicacaoPeso = '';
     if(valorImc < 18.5) {
